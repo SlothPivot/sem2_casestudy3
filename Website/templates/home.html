@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+{% if g.user == g.user %}
+<h3 class="title">
+  Welcome, {{g.user}} </h3>
+<h2 class="subtitle">
+  Roses are red<br>Violets are blue<br>Unexpected ";"<br>At line 42<br><br>OUR SPONSOR:</h2>
+{% else %}
+<h5>Welcome, Guest</h5>
+{% endif %}
+<iframe src="https://www.pishop.us/" height="600" width="750"></iframe>  
+{% endblock content %}

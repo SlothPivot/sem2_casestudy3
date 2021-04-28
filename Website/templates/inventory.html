@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1>Inventory</h1>
+<p>We are a company that manages and monitor Warehouse locations for medium or 
+small bussiness clients. We are specialized in building infrastructure application
+for each use cases of our clients. </p>
+{% for item in items %}
+    <article class="media content-section">
+        <div class="media-body">
+        <div class="article-metadata">
+            <small class="mr-2" href="#">{{ item[2] }}</small>
+            <small class="text-muted">{{ item[3] }}</small>
+        </div>
+        <div>
+            <h2><class="article-title" href="#">{{ item[0] }}</h2>
+            <h5><class="article-title" href="#">{{ item[1] }}</h5>
+        </div>
+        <div>
+            <p class="article-content">{{ item[4] }}</p>
+        </div>
+            <p class="article-content">{{ item[5] }}</p>
+        </div>
+    </article>
+{% endfor %}
+    
+{% endblock content %}

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>
+  Home Page
+</h2>
+{% if name %}
+<h4>Hello, {{name}} </h4>
+<h4>Email: {{email}} </h4>
+{% else %}
+<h5>Hi there guest</h5>
+{% endif %}
+    
+{% endblock content %}
